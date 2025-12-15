@@ -6,7 +6,7 @@
 This is the official implementation of the approach described in the paper:
 
 > [**NEHSNet: A Node-Edge-Hyperedge Synergy Network for 2D-to-3D Human Pose Estimation**]           
-> Fengguang Hua, Tuqian Zhangb, Yongkang Hua, Xinrui Yua, Shumei Baoa,        
+> Fengguang Hu, Tuqian Zhang, Yongkang Hu, Xinrui Yu, Shumei Bao,        
 
 
 <p align="center"><img src="figure/pipeline.png" width="80%" alt="" /></p>
