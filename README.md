@@ -43,10 +43,10 @@ To train a 1-frame GraphMLP model on Human3.6M:
 
 ```bash
 # Train from scratch
-python main.py --frames 1 --batch_size 256
+python main.py --frames 1 --batch_size 2048
 
 # After training for 20 epochs, add refine module
-python main.py --frames 1 --batch_size 256 --refine --lr 1e-5 --previous_dir [your best model saved path]
+python main.py --frames 1 --batch_size 2048 --refine --lr 1e-5 --previous_dir [your best model saved path]
 ```
 
 ## Test the model
