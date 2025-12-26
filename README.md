@@ -37,6 +37,18 @@ ${POSE_ROOT}/
 
 The pretrained model can be found in [here](https://pan.baidu.com/s/1aL_2JR7snhvfNwOSEFS0dg?pwd=dnvv), please download it and put it in the './checkpoint/pretrained' directory. 
 
+## Train the model
+
+To train a 1-frame GraphMLP model on Human3.6M:
+
+```bash
+# Train from scratch
+python main.py --frames 1 --batch_size 256
+
+# After training for 20 epochs, add refine module
+python main.py --frames 1 --batch_size 256 --refine --lr 1e-5 --previous_dir [your best model saved path]
+```
+
 ## Test the model
 
 To test a 1-frame NEHSNet model:
@@ -52,19 +64,6 @@ python main.py --test --previous_dir 'checkpoint/pretrained/1' --frames 1 --data
 To test a 1-frame NEHSNet model with refine module on Human3.6M:
 ```bash
 python main.py --test --previous_dir 'checkpoint/pretrained/1/refine' --frames 1 --refine --refine_reload
-```
-
-
-## Train the model
-
-To train a 1-frame GraphMLP model on Human3.6M:
-
-```bash
-# Train from scratch
-python main.py --frames 1 --batch_size 256
-
-# After training for 20 epochs, add refine module
-python main.py --frames 1 --batch_size 256 --refine --lr 1e-5 --previous_dir [your best model saved path]
 ```
 
 ## Demo
